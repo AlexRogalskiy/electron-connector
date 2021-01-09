@@ -1,0 +1,33 @@
+#lb {
+	background-color:@LB_BG_COL;
+	// border-top:1px black solid;
+	border-bottom:1px @GL_SPLITTER_TOP solid;
+	#lb_inner{
+		background:@LB_BG_COL;
+	}
+	b {
+		color:@LB_BUTTON_COL;
+		&:hover{
+			color:@LB_BUTTON_HOVER;
+		  }
+		  &:active, &.pressed {
+			background-color:rgba(0,0,0,0.2);
+			color:white;
+		  }
+	}
+	.lb_placeholder {
+		background: rgba(0,0,0,0.2);
+	}
+	.ui-sortable-helper {
+		color: black;
+	}
+}
+#lb_tip {
+	background: @LB_TIP_BG;
+	border: 1px solid @LB_TIP_BORDER;
+	color:@LB_TIP_COL;
+	hr{
+		border-top: 1px solid @HR_TOP;
+		border-bottom: 1px solid @HR_BTM;
+	}
+}

@@ -1,0 +1,31 @@
+{
+    "extends":"airbnb",
+    "env":{
+        "browser":true,
+        "commonjs": true,
+        "es6": true,
+        "node": true
+    },
+    "globals": {
+        "amdRequire":true,
+        "nodeRequire":true,
+        "$":true,
+        "I":true,
+        "J":true,
+        "D":true,
+        "monaco":true,
+        "GoldenLayout":true,
+        "toastr":true
+
+    },
+    "rules" : {
+        "no-nested-ternary": "warn",
+        "no-plusplus":["error", {"allowForLoopAfterthoughts": true}],
+        "no-useless-escape":"warn",
+        "no-template-curly-in-string":"warn",
+        "no-cond-assign": ["error", "except-parens"],
+        "no-unused-expressions":["error", { "allowShortCircuit": true, "allowTernary": true }],
+        "no-param-reassign":["error", { "props": false }],
+        "no-underscore-dangle": ["error", { "allowAfterThis": true }]
+    }
+}

@@ -1,0 +1,18 @@
+#wse {
+	background-color: @WSE_BG_COL;
+	color:@WSE_COL;
+	font-family: apl;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 1.1em;
+	text-align: left;
+	.bt_text {
+		&::before {
+			color:#1c1e28;
+		}
+		&.selected {
+			background-color:@WSE_SEL_BG_COL;
+			outline:@WSE_SEL_BG_COL;
+		}
+	}
+}

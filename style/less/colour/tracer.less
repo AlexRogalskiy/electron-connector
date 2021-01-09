@@ -1,0 +1,28 @@
+.toolbar{
+  background-color: @TOOLBAR_BG_COL;
+  border-bottom: 1px solid @TOOLBAR_BRD_COL;
+}
+.tb_btn {
+  color:@TOOLBAR_FG_COL;
+  background: transparent;
+  box-shadow: none!important;
+  border-radius: 0!important;
+  // font-size: 18px;
+  &:hover{
+    // background-color: rgba(0,0,0,0.1);
+    color:@TOOLBAR_FG_HOVER_COL;
+  }
+  &:active, &.pressed {
+    background-color:rgba(0,0,0,0.2);
+    color:white;
+  }
+  &:disabled {
+    background: transparent!important;
+    color:@CN_INPUT_DIS_BG;
+    cursor: inherit;
+  }
+}
+.tb_sep{
+  border: 0 solid @TOOLBAR_BRD_COL;
+  border-right-width: 1px;
+}  

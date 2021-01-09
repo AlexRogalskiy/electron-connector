@@ -1,0 +1,77 @@
+#cn {
+  input:not([type=button]):not([type=file]):not([type=submit]):not([type=checkbox]),textarea{
+    border: 1px solid @CN_INPUT_BORDER_COL;
+    background-color: 	@CN_INPUT_BG;
+		color:@CN_INPUT_FG;
+    &:disabled{
+      background-color:	@CN_INPUT_DIS_BG;
+			border-color:	@CN_INPUT_BORDER_COL;
+			color:@CN_INPUT_DIS_FG;
+			&::-webkit-input-placeholder {
+				color: @CN_INPUT_DIS_FG;
+			}
+		}
+		&::placeholder {
+			color:@CN_INPUT_DIS_FG;
+		}
+  }
+  hr {
+		background-color: #a9a9a9;
+		border-color: #a9a9a9;
+		color: #a9a9a9;
+		border-top: 1px solid @HR_TOP;
+		border-bottom: 1px solid @HR_BTM;
+	}
+	.hsplitbar {
+		background: @GL_SPLITTER @GL_SPLITTERV_IMG no-repeat center !important;
+		border-right: solid 1px @GL_SPLITTER_TOP;
+		border-left: solid 1px @GL_SPLITTER_TOP;
+	}
+}
+#cn_favs {
+	
+	>div.list_sel{
+		background:@CN_FAV_BTN_BG;
+		color: @CN_FAV_BTN_FG;
+		opacity:1;
+		.go {
+			color:@CN_FAV_BTN_FG;
+			&:hover{
+				color:@BUTTON_HOVER_COL;
+			}
+		}
+	}
+	.list-focus {
+		outline: dotted black 1px;
+	}
+	>div{
+		background:@CN_FAV_BTN_UNSEL_BG;
+		color:@CN_FAV_BTN_UNSEL_FG;
+	}
+}
+#cn_fav_btns {
+  background:linear-gradient(@CN_RHS_BG, @CN_RHS_BG2);
+}
+#cn_lhs {
+	background: @CN_LHS_BG;
+}
+#cn, #cn_rhs {
+	background: linear-gradient(@CN_RHS_BG, @CN_RHS_BG2);
+}
+#cn_env_add {
+	color: @CN_LABEL_COL;
+	// a {
+	// 	color: @CN_ENV_BTN_FG;
+	// }
+}
+.cn_dlg_content {
+	color: @CN_LABEL_COL;
+	line-height: 1.5em;
+	.fa_icon {
+		font-size: 40px;
+	}
+	pre {
+		font-size: 16px;
+		font-family: monospace;
+	}
+}

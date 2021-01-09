@@ -1,0 +1,14 @@
+node_modules
+.vscode
+_/
+aplcore
+CONTINUE
+CONTINUE.dws
+GHTOKEN
+npm-debug.log
+*.swp
+ship/
+.vscode
+GH-Releases.json
+test.dws
+yarn.lock
